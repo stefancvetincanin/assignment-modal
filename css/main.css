@@ -1,0 +1,36 @@
+.maska, .modal {
+    display: none;
+    position: absolute;
+}
+
+.maska {
+    z-index: 1;
+    background-color: grey;
+    opacity: 0.5;
+    /* height: 100%;
+    width: 100%; */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.modal {
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    background-color: white;
+    border: 1px solid black;
+    /* padding: 20px; */
+    text-align: center;
+    /* height: 250px; */
+    width: 600px;
+    padding-top: 75px;
+    /* line-height: 250px; */
+    transform: translate( -50%, -50% );
+    overflow: scroll;
+}
+
+.modal-vis {
+    display: inline-block;
+}
