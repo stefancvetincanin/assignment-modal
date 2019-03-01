@@ -25,7 +25,7 @@
     text-align: center;
     /* height: 250px; */
     width: 600px;
-    padding-top: 75px;
+    padding-top: 40px;
     /* line-height: 250px; */
     transform: translate( -50%, -50% );
     overflow: scroll;
@@ -33,4 +33,9 @@
 
 .modal-vis {
     display: inline-block;
+}
+
+.modal > button {
+    margin-bottom: 40px;
+    margin-top: 40px;
 }
