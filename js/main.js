@@ -6,15 +6,15 @@ const maska = s("maska")
 const ugasi = s("ugasi")
 
 modalBtn.addEventListener("click", function() {
-    $("#maska").show()
+    maska.classList.add("maska-vis")
     modal.classList.add("modal-vis")
 })
 
 maska.addEventListener("click", function() {
-    $("#maska").hide()
+    maska.classList.remove("maska-vis")
     modal.classList.remove("modal-vis")
 })
 ugasi.addEventListener("click", function() {
-    $("#maska").hide()
+    maska.classList.remove("maska-vis")
     modal.classList.remove("modal-vis")
 })

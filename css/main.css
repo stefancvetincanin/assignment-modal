@@ -1,6 +1,5 @@
 .maska, .modal {
     display: none;
-    position: absolute;
 }
 
 .maska {
@@ -13,9 +12,11 @@
     left: 0;
     right: 0;
     bottom: 0;
+    position: fixed;
 }
 
 .modal {
+    position: absolute;
     z-index: 2;
     top: 50%;
     left: 50%;
@@ -24,15 +25,20 @@
     /* padding: 20px; */
     text-align: center;
     /* height: 250px; */
-    width: 600px;
+    max-width: 600px;
     padding-top: 40px;
     /* line-height: 250px; */
     transform: translate( -50%, -50% );
-    overflow: scroll;
+    overflow-y: scroll;
+    /* margin: 0 -25px; */
 }
 
 .modal-vis {
     display: inline-block;
+}
+
+.maska-vis {
+    display: block;
 }
 
 .modal > button {
